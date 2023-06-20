@@ -348,12 +348,22 @@ a {
 }
 .stats .avatar-block{
     display: flex;
+    flex-wrap: wrap;
     gap: 16px 14px ;
     margin-top: 26px;
 
 }
 .stats .avatar-group{
     display: flex;
+}
+.stats .avatar-1{
+    background: #F8C120;
+    font-weight: 450;
+    font-size: 0.7rem;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
 }
 .stats .avatar{
     width: 16px;
@@ -430,10 +440,10 @@ a {
     margin-top: 90px;
 }
 .subscription .body{
-   
+    position: relative;
     display: flex;
     align-items: center;
-    
+    height: 370px;
     border-radius: 20px;
     background: #063183;
 }
@@ -460,11 +470,11 @@ a {
     background-color: #fff;
     color:#002366;
 }
-/* .subscription .image{
+.subscription .image{
     position: absolute;
     bottom: 0px;
     right: 221px;
-} */
+}
 
 /* footer */
 .footer{
