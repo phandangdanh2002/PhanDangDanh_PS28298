@@ -291,6 +291,11 @@ a {
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
+    transition: all 1s linear;
+}
+.featuread .item:hover{
+    box-shadow: 0px 2px 0 #006599;
+    transform: translateY(10px);
 }
 .featuread .item .thumb{
     width: 100%;
