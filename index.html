@@ -4,49 +4,107 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon//apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon//apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon//apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon//apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon//apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon//apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon//apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon//apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./assets/favicon//android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon//favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon//favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon//manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Reset Css -->
     <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- Style Css -->
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/reponsive.css">
+    <link rel="stylesheet" href="./assets/css/reponesive.css">
+    <!-- Embed fonts -->
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+     <link
+         href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+         rel="stylesheet"
+     />
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
     <title>Phan Dang Danh</title>
 </head>
 <body>
-    <main>
-        <div class="fixed-header">
-            <div class="content">
-                 <!-- Nav -->
-                 <nav class="navbar">
-                    <!-- Logo -->
-                    <a href="#">
-                        LOCK&LOCK
-                    </a>
-                    <!-- Navigation -->
-                    <ul id="pc-nav">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#resources">Resources</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li class="show-on-mobile separate">
-                            <a href="#!">Sign in</a>
-                        </li>
-                        <li class="show-on-mobile"><a href="#!">Sign up</a></li>
-                    </ul>
+   <!--PC header -->
+    <header class="fixed-header">
+        <div class="content">
+                <!-- Nav -->
+            <nav class="navbar">
+                <!-- Table and Moblie -->
+                <label for="menu-checkbox" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+                </label>
 
-                    <!-- Action -->
-                    <div class="actions">
-                        <a href="#!" class="action-link">Sign in</a>
-                        <a href="#!" class="btn action-btn">Sign up</a>
-                    </div>
-                </nav>
-            </div>
+                <!-- Logo -->
+                <a href="#">
+                    LOCK&LOCK
+                </a>
+                <!-- Navigation -->
+                <ul id="pc-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    
+                </ul>
+
+                <!-- Action -->
+                <div class="actions">
+                    <a href="./form.html" class="action-link" target="_blank">Sign in</a>
+                    <a href="./form.html" class="btn action-btn"  target="_blank">Sign up</a>
+                </div>  
+            </nav>
         </div>
+    </header>
 
+    <!-- Table and Moble  Header -->
+    <header class="mobile-header">
+        <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+        <!-- Overplay -->
+        <label class="menu-overplay" for="menu-checkbox">
+        </label>
+        
+        <!-- Menu-content -->
+        <div class="menu-drawer">
+             <!-- Logo -->
+            <a href="#">
+                LOCK&LOCK
+            </a>
+              <!-- Navigation -->
+            <ul id="pc-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="show-on-mobile separate " ><a href="./form.html">Sign in</a></li>
+                <li  class="show-on-mobile"><a href="./form.html">Sign up</a></li>
+                
+            </ul>
+        </div>
+    </header>
+    <!-- Main -->
+    <main >
         <!-- Hero -->
         <div class="hero-wrap">
             <div class="content">
                
 
-                <div class="hero">
+         
                     <div class="info">
                         <p class="sub-title">Welcome to lock&lock Agency</p>
                         <h1 class="title">
@@ -61,7 +119,7 @@
                     </div>
 
                     <img src="./assets/img/banner.svg" alt=" Discover a place you'll love to live." class="hero-img">
-                </div>
+              
             </div>
         </div>
         <!-- Clients -->
@@ -82,7 +140,7 @@
                 </div>
                 <div class="row row-desc">
                     <p class="desc">More than 45,000+ companies trust besnik</p>
-                    <p class="desc">5 Star Ratings (2k+ Review)</p>
+                    <p class="desc hide-on-moblie">5 Star Ratings (2k+ Review)</p>
                 </div>
                 <div class="images">
                     <a href="">
@@ -104,7 +162,7 @@
             </div>
         </div>
         <!-- Guides -->
-        <div class="guides">
+        <div class="guides" id="services">
             <div class="content">
                 <h2 class="sub-title">How its works?</h2>
                 <p class="desc">Everything you need to know when you're looking to buy, rent, or sell - all in one place.</p>
@@ -143,7 +201,7 @@
         </div>
 
         <!-- Featured -->
-        <div class="featuread">
+        <div class="featuread" id="features">
             <div class="content">
                 <header>
                     <h2 class="sub-title">Featured Properties</h2>
@@ -217,11 +275,15 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="view-all show-on-mobile">
+                    <a href="#!" class="btn">View All Properties</a>
+                </div>
             </div>
         </div>
 
         <!-- Stats -->
-        <div class="stats">
+        <div class="stats" id="resources">
             <div class="content">
                 <div class="row">
                     <div class="img-block">
@@ -304,7 +366,7 @@
         </div>
 
         <!-- Subscription -->
-        <div class="subscription">
+        <div class="subscription" id="contact">
             <div class="content">
                 <div class="body">
                     <div class="info">
@@ -317,79 +379,81 @@
             </div>
         </div>
 
-        <!-- footer -->
-        <footer class="footer">
-            <div class="content">
-                <div class="row row-top">
-                    <div class="column">
-                        <h3 class="heading">Product</h3>
-                        <ul class="list">
-                            <li class="item">
-                                <a href="">Listing</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Property</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Agents</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Blog</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h3 class="heading">Resources</h3>
-                        <ul class="list">
-                            <li class="item">
-                                <a href="">Our Homes</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Member Stories</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Video</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Free trial</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h3 class="heading">Company</h3>
-                        <ul class="list">
-                            <li class="item">
-                                <a href="">Patnerships</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Terms of use</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Privacy</a>
-                            </li>
-                            <li class="item">
-                                <a href="">Sitemap</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="column">
-                        <h3 class="heading">Get in touch</h3>
-                        <p class="desc">You’ll find your next home, in any style you prefer.</p>
-                        <div class="social">
-                            <a href="" class="social-link">
-                                <img src="./assets/img/Facebook icon.svg" alt="">
-                            </a>
-                            <a href="" class="social-link">
-                                <img src="./assets/img/twitter icon (1).svg" alt="">
-                            </a>
-                            <a href="" class="social-link">
-                                <img src="./assets/img/twitter icon.svg" alt="">
-                            </a>
-                        </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer" >
+        <div class="content">
+            <div class="row row-top">
+                <div class="column">
+                    <h3 class="heading">Product</h3>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="">Listing</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Property</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Agents</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3 class="heading">Resources</h3>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="">Our Homes</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Member Stories</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Video</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Free trial</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3 class="heading">Company</h3>
+                    <ul class="list">
+                        <li class="item">
+                            <a href="">Patnerships</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Terms of use</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Privacy</a>
+                        </li>
+                        <li class="item">
+                            <a href="">Sitemap</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3 class="heading">Get in touch</h3>
+                    <p class="desc">You’ll find your next home, in any style you prefer.</p>
+                    <div class="social">
+                        <a href="" class="social-link">
+                            <img src="./assets/img/Facebook icon.svg" alt="">
+                        </a>
+                        <a href="" class="social-link">
+                            <img src="./assets/img/twitter icon (1).svg" alt="">
+                        </a>
+                        <a href="" class="social-link">
+                            <img src="./assets/img/twitter icon.svg" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
-        </footer>
-    </main>
+        </div>
+    </footer>
+
 </body>
 </html>

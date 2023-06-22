@@ -6,8 +6,12 @@
     --primary-color:#0F1B4C;
 }
 
+html,body {
+    scroll-behavior: smooth;
+}
 html{
     font-size: 62.5%;
+    
 }
 
 body{
@@ -59,7 +63,7 @@ a {
     position: relative;
     flex-direction: column;
     background: #E6F0FF;
-    height: 100vh;
+   
 }
 .navbar{
     display: flex;
@@ -97,27 +101,32 @@ a {
     border-radius: 8px;
 }
 
-.hero{
-    margin-top: 130px;
+.hero-wrap{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color: #E6F0FF;
+   height: calc(100vh - 90px);
 }
-.hero .info{
+.hero-wrap .info{
     width: 51%;
 }
-.hero .sub-title{
+.hero-wrap .sub-title{
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.5;
     letter-spacing: 0.01em;
     color: #687691;
 }
-.hero .title{
+.hero-wrap .title{
     margin-top: 8px;
     font-weight: 700;
     font-size: 6.2rem;
     line-height: 1.19;
     color: #000336;
 }
-.hero .desc{
+.hero-wrap .desc{
     margin-top: 30px;
     font-weight: 400;
     font-size: 1.8rem;
@@ -272,7 +281,8 @@ a {
     margin-left: 8px;
 }
 .featuread .list{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 30px;
     margin-top: 70px;
 }
@@ -506,7 +516,8 @@ a {
     padding: 50px 0px 58px;
 }
 .footer .row{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
 }
 .footer .row-top{
     gap: 185px;
